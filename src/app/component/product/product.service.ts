@@ -9,8 +9,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductService 
 {
+  /*URL do backend*/
   baseUrl = "http://localhost:8080/produtos"
 
+  /*construtor do serviço, onde nós injetamos p MatSnackBar*/
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
   showMessage(msg: string): void
@@ -22,10 +24,12 @@ export class ProductService
         verticalPosition: "top"
       })
   }
+  //metodo 
   create(product: Product): Observable<Product>
   {
     return this.http.post<Product>(this.baseUrl, product)
   }
+  //metodo para carregar os 
   read(): Observable<Product[]>
   {
     return this.http.get<Product[]>(this.baseUrl)

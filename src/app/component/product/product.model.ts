@@ -1,3 +1,4 @@
+/*atributos do backend*/
 export interface Product
 {
     proId?: number
