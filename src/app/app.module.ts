@@ -37,6 +37,13 @@ import { ClienteCreateComponent } from './component/cliente/cliente-create/clien
 import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
 import { MatTableModule } from '@angular/material/table';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
+import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
+import { FormaPagamentoReadComponent } from './component/formaPagamento/forma-pagamento-read/forma-pagamento-read.component';
+import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
+import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
+import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
+import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +65,14 @@ import { ProductUpdateComponent } from './component/product/product-update/produ
     EnderecoReadComponent,
     ClienteCreateComponent,
     FornecedorCreateComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    ProductDeleteComponent,
+    FormaPagamentoCrudComponent,
+    FormaPagamentoReadComponent,
+    ClienteDeleteComponent,
+    FormaPagamentoDeleteComponent,
+    FormaPagamentoCreateComponent,
+    FormaPagamentoUpdateComponent
   ],
   imports: [
     BrowserModule,
